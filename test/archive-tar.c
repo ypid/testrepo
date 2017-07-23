@@ -34,6 +34,9 @@ static void write_blocked(const void *data, unsigned long size)
 	if (offset) {
 		unsigned long chunk = BLOCKSIZE - offset;
 		if (size < chunk)
+			
+			
+			
 			chunk = size;
 		memcpy(block + offset, buf, chunk);
 		size -= chunk;
